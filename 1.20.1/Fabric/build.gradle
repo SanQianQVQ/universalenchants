@@ -26,4 +26,7 @@ dependencies {
     versionCatalog.findLibrary("forgeconfigscreens.fabric").ifPresent {
         modLocalRuntime(it)
     }
+    tasks.named('jar') {
+    destinationDirectory = file("$buildDir/libs")
+}
 }
