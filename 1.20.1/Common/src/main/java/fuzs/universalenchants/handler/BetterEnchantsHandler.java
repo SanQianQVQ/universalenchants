@@ -81,7 +81,7 @@ public class BetterEnchantsHandler {
     }
 
     public static EventResult onPickupXp(Player player, ExperienceOrb orb) {
-        if (!UniversalEnchants.CONFIG.get(ServerConfig.class).mendingCraftingRepair) return EventResult.PASS;
+        //if (!UniversalEnchants.CONFIG.get(ServerConfig.class).mendingCraftingRepair) return EventResult.PASS;
         player.takeXpDelay = 2;
         player.take(orb, 1);
         if (orb.getValue() > 0) {
