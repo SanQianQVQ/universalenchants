@@ -28,6 +28,10 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+    
+    - name: Set working directory
+      working-directory: main/1.20.1
+
 
     # Configure Gradle for optimal use in GitHub Actions, including caching of downloaded dependencies.
     # See: https://github.com/gradle/actions/blob/main/setup-gradle/README.md
