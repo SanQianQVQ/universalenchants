@@ -28,9 +28,6 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    
-    - name: Set working directory
-      working-directory: main/1.20.1
 
 
     # Configure Gradle for optimal use in GitHub Actions, including caching of downloaded dependencies.
@@ -42,7 +39,7 @@ jobs:
       run: chmod +x ./gradlew
 
     - name: CD
-      run: ls && cd 1.20.1
+      run: ls && cd 1.20.1 && gradle wrapper
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build
