@@ -39,10 +39,10 @@ jobs:
       run: ls && cd 1.20.1 && gradle wrapper
 
     - name: Grant execute permission for gradlew
-      run: chmod +x ./gradlew
+      run: chmod +x ./gradle
 
     - name: Build with Gradle Wrapper
-      run: ./gradlew build
+      run: ./gradle build
 
     - name: Upload JAR file
       uses: actions/upload-artifact@v3
