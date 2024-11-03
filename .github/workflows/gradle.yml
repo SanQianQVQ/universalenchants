@@ -21,10 +21,6 @@ jobs:
     permissions:
       contents: read
 
-    defaults:
-      run:
-        working-directory: main/1.20.1
-
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
